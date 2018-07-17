@@ -10,6 +10,7 @@
   "contributors": [
     "Manuel Bachl (https://www.finndrop.de)"
   ],
+  "license": "MIT",
   "scripts": {
     "build": "node utils/build.js",
     "start": "node utils/webserver.js"
