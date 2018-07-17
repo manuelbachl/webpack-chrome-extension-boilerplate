@@ -1,17 +1,50 @@
 {
-  "name": "SEO Helper",
-  "description": "Google Chrome extension for content editors to find SEO related issues in their content",
+  "manifest_version": 2,
+  "name": "Chrome Extension Boilerplate",
+  "description": "Google Chrome extension boilerplate",
+  "version": "0.0.1",
+  "homepage_url": "https://github.com/manuelbachl/webpack-chrome-extension-boilerplate",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
   "options_page": "options.html",
   "background": {
-    "page": "background.html"
+    "scripts": [
+      "src/js/background.js"
+    ],
+    "persistent": true
+  },
+  "page_action": {
+    "default_icon": "icons/icon19.png",
+    "default_title": "page action demo",
+    "default_popup": "src/page_action.html"
   },
   "browser_action": {
-    "default_popup": "popup.html",
-    "default_icon": "icon-34.png"
+    "default_popup": "src/popup.html",
+    "default_icon": "icons/icon48.png"
   },
-  "icons": {
-    "128": "icon-128.png"
-  },
-  "manifest_version": 2,
-  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+  "permissions": [
+    "contextMenus"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*"
+      ],
+      "css": [
+        "src/css/inject.css"
+      ]
+    },
+    {
+      "matches": [
+        "*"
+      ],
+      "js": [
+        "src/js/inject.js"
+      ]
+    }
+  ]
 }
