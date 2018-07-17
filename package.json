@@ -1,17 +1,11 @@
 {
   "name": "seo-helper-chrome-extension",
   "version": "0.0.1",
-  "description": "Google Chrome extension for content editors to find SEO related issues in their content",
+  "description": "Google Chrome extension boilerplate using webpack",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FinndropStudios/stylelint-config.git"
+    "url": "git+https://github.com/manuelbachl/webpack-chrome-extension-boilerplate.git"
   },
-  "keywords": [
-    "stylelint",
-    "stylelintconfig",
-    "config",
-    "css"
-  ],
   "author": "Manuel Bachl (https://www.finndrop.de)",
   "contributors": [
     "Manuel Bachl (https://www.finndrop.de)"
