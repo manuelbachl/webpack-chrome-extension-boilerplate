@@ -1,0 +1,43 @@
+{
+  "name": "seo-helper-chrome-extension",
+  "version": "0.0.1",
+  "description": "Google Chrome extension for content editors to find SEO related issues in their content",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FinndropStudios/stylelint-config.git"
+  },
+  "keywords": [
+    "stylelint",
+    "stylelintconfig",
+    "config",
+    "css"
+  ],
+  "author": "Manuel Bachl (https://www.finndrop.de)",
+  "contributors": [
+    "Manuel Bachl (https://www.finndrop.de)"
+  ],
+  "scripts": {
+    "build": "node utils/build.js",
+    "start": "node utils/webserver.js"
+  },
+  "devDependencies": {
+    "@finndropstudios/eslint-config": "^0.2.2",
+    "@finndropstudios/stylelint-config": "^0.3.0",
+    "clean-webpack-plugin": "^0.1.17",
+    "copy-webpack-plugin": "^4.2.0",
+    "css-loader": "^0.25.0",
+    "eslint": "^4.19.1",
+    "eslint-plugin-import": "^2.13.0",
+    "file-loader": "^0.11.2",
+    "fs-extra": "^0.30.0",
+    "html-loader": "^0.4.5",
+    "html-webpack-plugin": "2.24.1",
+    "style-loader": "^0.13.0",
+    "stylelint": "^9.3.0",
+    "stylelint-declaration-block-no-ignored-properties": "^1.1.0",
+    "stylelint-scss": "^3.1.3",
+    "webpack": "2.2.1",
+    "webpack-dev-server": "^2.3.0",
+    "write-file-webpack-plugin": "3.4.2"
+  }
+}
