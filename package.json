@@ -1,5 +1,5 @@
 {
-  "name": "seo-helper-chrome-extension",
+  "name": "webpack-chrome-extension-boilerplate",
   "version": "0.0.1",
   "description": "Google Chrome extension boilerplate using webpack",
   "repository": {
@@ -15,8 +15,6 @@
     "start": "node utils/webserver.js"
   },
   "devDependencies": {
-    "@finndropstudios/eslint-config": "^0.2.2",
-    "@finndropstudios/stylelint-config": "^0.3.0",
     "clean-webpack-plugin": "^0.1.17",
     "copy-webpack-plugin": "^4.2.0",
     "css-loader": "^0.25.0",
